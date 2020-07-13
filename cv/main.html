@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+<link rel="stylesheet" href="main.css">
+
+<title>SCNS</title>
+  </head>
+  <body>
+  	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<div class="bar">
+  <a class="h" href="C:\Users\rk info\Desktop\SCNS CV project\main.html">Home</a>
+  <a class="ab" href="C:\Users\rk info\Desktop\SCNS CV project\About\main.html">About Us</a>
+  <a class="cv" href="C:\Users\rk info\Desktop\SCNS CV project\cv\main.html">create your CV </a>
+  <a class="t" href="C:\Users\rk info\Desktop\SCNS CV project\team\main.html">Our Team</a>
+</div>
+<h1 class="tit">Create you own prfessional</h1> 
+<h1 class="tit">cv</h1> 
+<div class="back">
+<div class="formulat">
+<h2 class="f">start creating your resume</h2>
+
+	<p class="f">first name</p>
+	<input class="f" id="s1" name="name1"  type="text" >
+
+	<p class="f">second name</p>
+	<input class="f" id="s" name="last"  type="text" >
+
+	<p class="f">phone</p>
+	<input class="f" id="s2" name="ph"  type="text" >
+
+	<p class="f">address</p>
+	<input class="f" id="s3" name="add"  type="text" >
+
+	<p class="f">email</p>
+	<input class="f" id="s4" name="email"  type="text" >
+
+	<p class="f">field of study</p>
+	<input class="f" id="l" name="study"  type="text" >
+
+	<p class="f">luangage</p>
+	<input class="f" id="l2" name="lang"  type="text" >
+
+	<p class="f">hobbys</p>
+	<input class="f" id="l3" name="hobby"  type="text">
+
+	<p class="f">motivation letter</p>
+	<input class="f" id="xl" name="letter"  type="text" >
+
+	<p class="f">skills</p>
+	<input class="f" id="l4" name="skill"  type="text" >
+
+	<p class="f">experience</p>
+	<input class="f" id="l5" name="exp"  type="text" >
+
+	<p class="f">your photo src please</p>
+	<input class="f" id="l6" name="exp"  type="text" >
+
+	<button onclick ="func()">create your cv</button>
+</div>
+</div>
+<div class="resume">
+	<div class="left">
+		<div class="foto">
+			<img id="p" src="halim10.jpeg">
+		</div>
+		<div class="content">
+			<div class="info">
+				<div class="title">
+					<p class="bold">name and lastname</p>
+					<p class="regular"> job </p>
+				</div>
+				<ul>
+					<li>
+						<div class="data">
+							<p class="phone">22222222</p>
+						</div>
+					</li>
+     				<li>
+						<div class="data">
+							<p class="house">22 RUE atatata 1020</p>
+						</div>
+					</li>
+					 <li>
+						<div class="data">
+							<p class="mail">halimboussada@yahoo.com</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="skills">
+				<div class="title">
+					<p class="bold2">skills</p>
+					<p class="sk">creative</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="profil">
+			<p class="bold3">Profile</p>
+			<ul>
+				 <li>
+					<div class="data">
+						<p class="discription">he is good one</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="experience1">
+			<p class="bold3">experience</p>
+			<ul>
+				 <li>
+					<div class="data">
+						<p class="experience">google </p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="study">
+			<p class="bold3">study</p>
+			<ul>
+				 <li>
+					<div class="data">
+						<p class="studies">iset djerba</p>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="lg">
+			<p class="bold3">language</p>
+			<ul>
+				 <li>
+					<div class="data">
+						<p class="lang">fr en ar </p>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="hob">
+			<p class="bold3">hobbys</p>
+			<ul>
+				 <li>
+					<div class="data">
+						<p class="ho">football baskettball</p>
+					</div>
+				</li>
+			</ul>
+		</div>		
+	</div>
+</div>
+<script>
+$('.resume').hide() ;
+	var array = [] ; 
+	var object = {} ; 
+	function func(){
+		var a = $('#l6').val() 
+		object.name = $('#s1').val() ; 
+	    object.last = $('#s').val() ; 
+	    object.study = $('#l').val() ; 
+	    object.lang = $('#l2').val() ; 
+	    object.hobby = $('#l3').val() ;
+	    object.letter = $('#xl').val() ; 
+	    object.phone = $('#s2').val(); 
+	    object.address = $('#s3').val(); 
+	    object.mail = $('#s4').val(); 
+	     object.skill = $('#l4').val();
+	     object.exper = $('#l5').val();
+	    array.push(object) ;
+        $('.formulat').hide(1000) ;
+        $('.resume').show(1000) ;
+        $('img').attr("src",a)
+        $(".bold").text(object.name + ' ' + object.last) 
+        $(".phone").text(object.phone)
+        $(".house").text(object.address)
+        $(".mail").text(object.mail)
+        $(".discription").text(object.letter)
+        $(".studies").text(object.study)
+        $(".lang").text(object.lang)
+        $(".ho").text(object.hobby)
+         $(".sk").text(object.skill)
+         $(".experience").text(object.exper)
+	     }
+</script>
+  </body>
+</html>
