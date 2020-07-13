@@ -46,7 +46,15 @@ background-color: #333 ;
 	text-align: center;
 	padding: 14px 16px ;
 	text-decoration: none ; 
-	color: black 
+	color: black ;
 	background : #ddd ;
+	margin-left : 75px;
 }
-
+.mid {
+	margin-left: 15px ;
+	color: #ddd ; 
+	text-align: center;
+}
+.mid1 {
+	margin-left: 30px ;
+}

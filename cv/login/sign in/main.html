@@ -18,12 +18,12 @@
 	<img src="icon.png">
 <div class="back">
  <div class="form">
-	<p>user name</p>
-	<input id="user" type="text" name="user">
-	<p>pasword</p>
-	<input id="pw" type="password" name="user">
-	<p>mail</p>
-	<input id="email" type="text" name="user">
+	<p class="mid">user name</p>
+	<input class="mid1" id="user" type="text" name="user">
+	<p class="mid">pasword</p>
+	<input class="mid1"  id="pw" type="password" name="user">
+	<p class="mid">mail</p>
+	<input class="mid1"  id="email" type="text" name="user">
     <div class="but">
 	<button class="bb" id="hal" onclick="signin()">sign in </button>
 	</div>
@@ -34,10 +34,10 @@
 </div>
 <div class="back2">
  <div class="form2">
-	<p>user name</p>
-	<input id="userlog" type="text" name="user">
-	<p>pasword</p>
-	<input id="pwlog" type="password" name="user">
+	<p class="mid">user name</p>
+	<input  class="mid1"  id="userlog" type="text" name="user">
+	<p class="mid">pasword</p>
+	<input  class="mid1"  id="pwlog" type="password" name="user">
 	<div class="but">
 	<button class="bb" id="lin" href="" onclick="login()">login</button>
 	</div>
@@ -74,7 +74,8 @@
       	var c =$("#userlog").val()+$("#pwlog").val() ;
       	for (var i = 0; i <1000; i++) {
       		if(localStorage.getItem(i)=== c){
-        window.location.replace("C:/Users/rk info/Desktop/scns project/SCNS-resume-maker/cv/main.html")      		}
+        window.location.replace("C:/Users/rk info/Desktop/scns project/SCNS-resume-maker/cv/main.html")      
+         }
        	}
       }
 </script>
