@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+<link rel="stylesheet" href="main.css">
+<title>SCNS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<div class="bar">
+  <a class="h" href="C:\Users\rk info\Desktop\scns project\SCNS-resume-maker\main.html">Home</a>
+  <a class="ab" href="C:\Users\rk info\Desktop\scns project\SCNS-resume-maker\About\main.html">About Us</a>
+  <a class="cv" href="C:\Users\rk info\Desktop\scns project\SCNS-resume-maker\cv\login\sign in\main.html">create your CV </a>
+  <a class="t" href="C:\Users\rk info\Desktop\scns project\SCNS-resume-maker\team\main.html">Our Team</a>
+</div>
+<h1 class="titl">sign in :) </h1>
+<div class="back">
+ <div class="form">
+	<p>user name</p>
+	<input id="user" type="text" name="user">
+	<p>pasword</p>
+	<input id="pw" type="text" name="user">
+	<p>mail</p>
+	<input id="email" type="text" name="user">
+	<button id="hal" onclick="signin()">sign in </button>
+	<button onclick="backto()">loge in</button>
+ </div>
+</div>
+<div class="back2">
+ <div class="form2">
+	<p>user name</p>
+	<input id="userlog" type="text" name="user">
+	<p>pasword</p>
+	<input id="pwlog" type="pasword" name="user">
+	<button onclick="sign()">sign in</button>
+	<button id="lin" href="" onclick="login()">loge in</button>
+ </div>
+</div>
+<p class="out"></p>
+<script>
+	$(".back").hide() ; 
+    function sign(){
+    $(".back2").hide(1000) ; 
+    $(".back").show(1000) ; 
+    }
+    var a = 0 ; 
+	function signin(){ 
+      var n = localStorage.getItem('counter');
+      if (n === null) {
+      n = 0;
+      } else {
+      n++;
+      }
+      localStorage.setItem("counter", n)
+      a = localStorage.getItem('counter')
+      localStorage.setItem(a, $("#user").val()+ $("#pw").val())
+      }
+      function backto(){
+    $(".back").hide(1000) ; 
+    $(".back2").show(1000) ; 
+      }
+      function login(){
+      	var c =$("#userlog").val()+$("#pwlog").val() ;
+      	for (var i = 0; i <1000; i++) {
+      		if(localStorage.getItem(i)=== c){
+        window.location.replace("C:/Users/rk info/Desktop/scns project/SCNS-resume-maker/cv/main.html")      		}
+       	}
+      }
+</script>
+  </body>
+</html>
