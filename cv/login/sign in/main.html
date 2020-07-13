@@ -14,17 +14,22 @@
   <a class="cv" href="C:\Users\rk info\Desktop\scns project\SCNS-resume-maker\cv\login\sign in\main.html">create your CV </a>
   <a class="t" href="C:\Users\rk info\Desktop\scns project\SCNS-resume-maker\team\main.html">Our Team</a>
 </div>
-<h1 class="titl">sign in :) </h1>
+<div class="platform">
+	<img src="icon.png">
 <div class="back">
  <div class="form">
 	<p>user name</p>
 	<input id="user" type="text" name="user">
 	<p>pasword</p>
-	<input id="pw" type="text" name="user">
+	<input id="pw" type="password" name="user">
 	<p>mail</p>
 	<input id="email" type="text" name="user">
-	<button id="hal" onclick="signin()">sign in </button>
-	<button onclick="backto()">loge in</button>
+    <div class="but">
+	<button class="bb" id="hal" onclick="signin()">sign in </button>
+	</div>
+	<div class="but">
+	<button class="bb" onclick="backto()">login</button>
+	</div>
  </div>
 </div>
 <div class="back2">
@@ -32,12 +37,17 @@
 	<p>user name</p>
 	<input id="userlog" type="text" name="user">
 	<p>pasword</p>
-	<input id="pwlog" type="pasword" name="user">
-	<button onclick="sign()">sign in</button>
-	<button id="lin" href="" onclick="login()">loge in</button>
+	<input id="pwlog" type="password" name="user">
+	<div class="but">
+	<button class="bb" id="lin" href="" onclick="login()">login</button>
+	</div>
+	<div class="but">
+	<button class="bb" onclick="sign()">sign in</button>
+	</div>
  </div>
 </div>
-<p class="out"></p>
+</div>
+
 <script>
 	$(".back").hide() ; 
     function sign(){

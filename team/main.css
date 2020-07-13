@@ -20,3 +20,52 @@ background-color: #333 ;
 	background-color : #ddd: 
 	color : black ;
 }
+
+.team {
+	overflow: hidden;
+	text-align: center;
+	background: #34495e ; 
+	padding: 60px
+}
+h1 {
+	text-transform: uppercase;
+	margin-bottom: 60px ; 
+	color: white ; 
+	font-size : 40px ;
+}
+.border {
+	display:  block;
+	margin: auto;
+	width: 160px ;
+	height: 3px ; 
+	background: #3498db
+	margin-bottom : 40px ;
+}
+.pic{
+	margin-bottom: 40px 
+}
+.pic a{
+	display: inline-block; 
+	margin : 0 30px;
+	height: 160px ; 
+	width: 160px ; 
+	overflow: hidden;
+	border-radius: 50% ;
+}
+.pic a img{
+	width :100%;
+	filter: grayscale(100%);
+	transition: 0.4s all ; 
+}
+.pic a:hover > img{
+	filter: none;
+}
+.section {
+	width: 600px ; 
+	margin : auto ; 
+	font-size: 20px ;
+	color : #ddd ;
+	text-align: justify ;
+}
+
+

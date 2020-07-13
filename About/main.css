@@ -1,12 +1,13 @@
 body{
 	margin: 0 ; 
+	background-image: url("cover6.jpg");
 }
 .bar {
 overflow: hidden;
 background-color: #333 ; 
 }
 .bar a{
-	float: left;
+	float: left ;
 	color:#f2f2f2;
 	text-align: center;
 	padding: 14px 16px ; 
@@ -19,4 +20,22 @@ background-color: #333 ;
 .bar a.ab {
 	background-color : #ddd ; 
 	color : black ;
+}
+h1 {
+	color: grey;
+   margin-left: 40px;
+   margin-bottom: 5px;
+   padding: 5px;
+}
+.section {
+	width: 600px ; 
+	margin : left ; 
+	font-size: 20px
+	color : white ;
+	text-align: justify;
+	text-decoration-color: white ;
+}
+.section p{
+	color: #ddd ;
+	margin : 30px ;
 }

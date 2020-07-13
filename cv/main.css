@@ -4,6 +4,7 @@ body{
 	box-sizing: border-box; 
 	list-style: none ; 
     font-family: 'Monstserrat', sans-serif ; 
+    background-image: url('cover.jpg');
 }
 .regular{
 	padding: 0 15px ; 
@@ -24,20 +25,25 @@ body{
 	height: auto;
 	display:flex;
 	margin: 50px auto ; 
+	background-color: white ;
+	border-radius: 5% ;
 }
 .resume .left{
 	width:  280px ; 
 	height: 1000px ;
-	background: #0bb5f4;
+	background: grey;
+	border-radius: 5% ;
 }
 .resume .right {
 	width:  450px ; 
 	height: 1000px ;
-	background: grey ;
+	background: white ;
+	border-radius: 5% ;
 }
 .resume .left .foto img{
 	width: 280px ; 
 	height: 280px ; 
+	border-radius: 50% ;
 }
 .resume .left .content{
 	padding: 0 25px ; 
@@ -61,14 +67,25 @@ background-color: #333 ;
 	background-color : #ddd ; 
 	color : black ;
 }
-h1{
+h1.tit{
 	font-size: 70px ; 
 	text-align: center;
+	color: white ;
+}
+h1.tit1{
+	font-size: 70px ; 
+	text-align: center;
+	color: grey ;
+}
+.back{
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  background: #2f3640 ; 
+  right: 50px
 }
 .formulat {
-overflow: hidden;
-background-color: #333 ; 
-margin-left: 30px ; 
+	margin-left: 20px ;
 }
 .formulat input#l , input#l2 ,input#l3 ,input#l4 ,input#l5 , input#l6{
 	height: 20px ;
@@ -79,10 +96,7 @@ margin-left: 30px ;
 	width: 1000px;
 	text-align: left;
 }
-.back {
-overflow: hidden;
-background-color: #333 ; 
-}
+
 button {
 	background-color : white ; 
 	color: black  ;
@@ -90,8 +104,7 @@ button {
 	border: none ; 
 	cursor: pointer;
     margin: 50px  10px ; 
-    opacity: 0.9 ; 
-   
+    opacity: 0.9 ;   
 }
 .formulat p.f{
 	color: white ; 
@@ -101,4 +114,7 @@ button {
 }
 .discription {
 		padding: 0 15px ; 
+}
+.foto img{
+
 }
